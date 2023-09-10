@@ -6,12 +6,6 @@
 
 This project defines a pipeline that **trains** an end-to-end small footprint keyword spotting model using input audio files, **tracks** experiments by logging the model artifacts, parameters and metrics, **builds** them as a web application. Then, **dockerizes** the application into a container and deploys it, together with the trained model artifacts into a cloud server with **CI/CD** integration, automated tests and releases.
 
-## Keyword Spotting App - Demo
-
-![](./images/demo_base.png)
-
-![](./images/demo_predicted.png)
-
 ## Description
 
 The project has consisted of implementation of existing research (audio signal processing, keyword spotting, ASR), development (audio data processing, deep neural network training, evaluation) and deployment (building model artifacts, web app development, docker, cloud PaaS) by integrating `CI/CD` pipelines with automated releases and tests.
@@ -33,6 +27,12 @@ The codebase:
     - A new release is created automatically when tags are pushed to the repository using `release.yaml`
     - The app is deployed to a cloud provider
     - The user can access the app via `URL`. The app facilitates to upload an input short `audio .wav file`, in which the predicted keyword is returned from the model along with the probability and displayed as a result in the app UI/webpage.
+
+### Keyword Spotting App - Demo
+
+![](./images/demo_base.png)
+
+![](./images/demo_predicted.png)
 
 ## Pipeline
 

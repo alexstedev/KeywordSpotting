@@ -42,6 +42,7 @@ jobs:
       - run: poetry install --no-interaction --no-root
         if: steps.cache-deps.outputs.cache-hit != 'true'
 
+      - run: poetry add tensorflow
       - run: poetry install --no-interaction
       - run: sudo apt-get install -y libsndfile1
 

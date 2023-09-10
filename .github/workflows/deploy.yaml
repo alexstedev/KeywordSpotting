@@ -1,9 +1,6 @@
 name: Build and deploy
 
-# Run workflow on every push to main branch
-on:
-  push:
-    branches: [main]
+on: workflow_dispatch
 
 # Workflow jobs
 jobs:

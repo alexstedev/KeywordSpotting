@@ -1,10 +1,6 @@
 name: Release
 
-# Run on every commit tag which begins with `v - version number` 
-on:
-  push:
-    tags:
-      - "v*"
+on: workflow_dispatch
 
 # Automatically create a GitHub Release, with release details
 jobs:

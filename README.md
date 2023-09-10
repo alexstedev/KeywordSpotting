@@ -1,4 +1,4 @@
-<h1 align="center>
+<h1 align="center">
     End-to-end small footprint keyword spotting application
 </h1>
 

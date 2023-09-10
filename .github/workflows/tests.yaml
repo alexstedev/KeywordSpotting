@@ -38,6 +38,7 @@ jobs:
           key: pydeps-${{ hashFiles('**/poetry.lock') }}
 
       # Install all dependencies. `--no-root` is used to avoid caching the code itself
+      - run: poetry lock
       - run: poetry install --no-interaction --no-root
         if: steps.cache-deps.outputs.cache-hit != 'true'
 
